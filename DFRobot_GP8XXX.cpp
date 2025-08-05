@@ -13,7 +13,7 @@
 
 int DFRobot_GP8XXX_IIC::begin(void)
 {
-  _pWire->begin();
+  // Don't call begin() here - let the user manage Wire initialization
   _pWire->beginTransmission(_deviceAddr);
   return _pWire->endTransmission();
 }

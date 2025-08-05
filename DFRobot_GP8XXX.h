@@ -211,7 +211,8 @@ class DFRobot_GP8512: public DFRobot_GP8XXX_IIC
 class DFRobot_GP8413: public DFRobot_GP8XXX_IIC
 {
   public:
-    DFRobot_GP8413(uint8_t deviceAddr = DFGP8XXX_I2C_DEVICEADDR,uint16_t resolution = RESOLUTION_15_BIT):DFRobot_GP8XXX_IIC(resolution,deviceAddr){};
+    DFRobot_GP8413(uint8_t deviceAddr = DFGP8XXX_I2C_DEVICEADDR, uint16_t resolution = RESOLUTION_15_BIT, TwoWire *pWire = &Wire)
+      :DFRobot_GP8XXX_IIC(resolution, deviceAddr, pWire){};
 };
 
 class DFRobot_GP8302: public DFRobot_GP8XXX_IIC
