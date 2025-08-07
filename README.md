@@ -2,7 +2,7 @@
 
 * [中文版](./README_CN.md)
 
-GP8XXX series driver libraries on the Arduino IDE (currently compatible with GP8101, GP8211S, GP8413, GP8501, GP8503, GP8512, GP8403, GP8302)
+GP8XXX series driver libraries on the Arduino IDE (currently compatible with GP8101, GP8211S, GP8413, GP8501, GP8503, GP8512, GP8403, GP8302) with support for both I2C and I2C1 interfaces
 
 ## Product Link([www.dfrobot.com](www.dfrobot.com))
 
@@ -27,7 +27,7 @@ SUK：
   - [Credits](#credits)
 
 ## Summary
-    This library has already provided sample demos for each of the 8 currently compatible products, and users can use them according to their names
+    This library has already provided sample demos for each of the 8 currently compatible products, and users can use them according to their names. This forked version includes support for both I2C (default) and I2C1 interfaces, allowing for more flexible hardware configurations.
 ## Installation
 
 There two methods: 
@@ -117,6 +117,7 @@ FireBeetle M0      |      √       |              |             |
 ## History
 
 - 2023/05/10 - Version 1.0.0 released.
+- Fork: Added support for I2C1 interface in addition to standard I2C.
 
 ## Credits
 
